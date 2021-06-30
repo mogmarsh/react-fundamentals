@@ -22,7 +22,6 @@ function UsernameForm({onSubmitUsername}) {
   const [username, setUsername] = React.useState(null);
 
   const handleSubmit = (event) => {
-    const username = usernameInput.current.value;
     onSubmitUsername(username);
 
     event.preventDefault();
